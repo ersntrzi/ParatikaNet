@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParatikaNet", "ParatikaNet\ParatikaNet.csproj", "{779E86AC-833A-4A37-864D-8992B258078F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWeb", "TestWeb\TestWeb.csproj", "{20B2D253-0FBB-4779-B5FD-7F9D76CA8410}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{779E86AC-833A-4A37-864D-8992B258078F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{779E86AC-833A-4A37-864D-8992B258078F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{779E86AC-833A-4A37-864D-8992B258078F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{779E86AC-833A-4A37-864D-8992B258078F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20B2D253-0FBB-4779-B5FD-7F9D76CA8410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20B2D253-0FBB-4779-B5FD-7F9D76CA8410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20B2D253-0FBB-4779-B5FD-7F9D76CA8410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20B2D253-0FBB-4779-B5FD-7F9D76CA8410}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {650429EA-DCC4-4435-A7F5-654321CC117C}
+	EndGlobalSection
+EndGlobal

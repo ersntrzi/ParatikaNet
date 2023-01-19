@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@if (TempData["token"] != null){
+
+<form action="https://entegrasyon.paratika.com.tr/paratika/api/v2/post/sale3d/@TempData["token"]" method="post">
+    <input type="text" name="cardOwner" placeholder="Card Owner" maxlength="32" /><br />
+    <input type="text" name="pan" placeholder="Kredi Kartı" maxlength="19" /><br />
+    <select name="expiryMonth">
+        @for (int i = 1; i < 13; i++)
+        {
+            <option value="@i.ToString("00")">@(new DateTime(DateTime.Now.Year, i, 1).ToString("MMM", System.Globalization.CultureInfo.CreateSpecificCulture("tr-TR")))</option>
+
+        }
+    </select><br />
+    <select name="expiryYear">
+        @for (int i = 0; i < 12; i++)
+        {
+            <option value="@DateTime.Now.AddYears(i).Year">@DateTime.Now.AddYears(i).Year</option>
+        }
+    </select><br />
+    <input type="password" name="cvv" placeholder="CVV" maxlength="4" /><br />
+
+    <input type="submit" value="Submit" />
+</form>
+<!-- TMX Profiling -->
+<script type="text/javascript"
+        src="https://h.online-metrix.net/fp/tags.js?org_id=6bmm5c3v&amp&session_id=@TempData["token"]">
+</script>
+<noscript>
+    <iframe style="width: 100px; height: 100px; border: 0; position: absolute; top: -5000px;"
+            src="https://h.online-metrix.net/fp/tags.js?org_id=6bmm5c3v&amp&session_id=@TempData["token"]&pageid=1"></iframe>
+</noscript>
+
+<!-- End profiling tags -->
+}
